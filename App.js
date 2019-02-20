@@ -9,12 +9,8 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import LotsOfGreeting from "./components/reactnative/Greeting";
+import Movie from "./components/reactnative/Movie";
 import LotsOfStyles from "./components/reactnative/LotsOfStyles";
-import FlexDirectionBasics from "./components/reactnative/Flexbox";
-import TextInput from "./components/reactnative/Textinput";
-import Flatlist from "./components/reactnative/Flatlist";
-import Sectionlist from "./components/reactnative/Sectionlist";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -27,7 +23,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-     <Sectionlist/>
+     <Movie/>
     );
   }
 }

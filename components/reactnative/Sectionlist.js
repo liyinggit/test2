@@ -15,10 +15,7 @@ export default class Sectionlist extends Component {
                         {title: 'J', data: ['Jackson', 'James', 'Jillian', 'Jimmy', 'Joel', 'John', 'Julie']},
                     ]}
                     renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
-                    {/*头部组件*/}
                     renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
-                    {/*//此函数用于为给定的item生成一个不重复的key
-                        //若不指定此函数，则默认抽取item.key作为key值。若item.key也不存在，则使用数组下标index。*/}
                     keyExtractor={(item, index) => index}
                 />
             </View>
